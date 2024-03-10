@@ -249,6 +249,7 @@ li a:hover{
     }
  
     .navContent {
+      overflow-x: hidden;
       background: #e5e5e5;
       color: black;
       width: auto;
@@ -285,6 +286,7 @@ li a:hover{
      .overview .left .contant button{
       position: relative;
       top: 60px;
+      overflow-x: hidden;
       font-size: 15px;
       border-radius: 40px;
       padding: 8px 40px 8px 40px;
@@ -293,12 +295,14 @@ li a:hover{
     
   
     .layout {
+      overflow-x: hidden;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
     }
 
 
     .div{
+      overflow-x: hidden;
       position: relative;
       top: -350px;
       left: -21px;
@@ -313,6 +317,7 @@ li a:hover{
       font-size: 20px;
     }
     .portfolio-details {
+      overflow-x: hidden;
       border-radius: 5px;
       position: relative;
       top: -3px;
