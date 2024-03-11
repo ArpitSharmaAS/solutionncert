@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Class 10 || Sub: Math</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+
+<style >
+  section{
+    display: none;
+  }
+  .gt{
+    margin-left: 340px;
+  }
+</style>
+</head>
+
+<body>
+<div class="everything">
+  <!-- partial:index.partial.html -->
+  <nav class="sidebar">
+    <header>
+      <div class="image-text">
+        <span class="image close">
+          <a href="/html/index.html"> <img src="data:image/png;base64,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" alt=""/>
+            </a>
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">class: 10</span>
+          <span class="profession">UP Board</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+       <a href="#chapter1" onclick="loadSection('chapter1')">
+        <li class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi icon bi-1-square-fill" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+          </svg>
+          <span class="text nav-text">Ch: 1</span>
+        </a>
+        <a style="margin-left: 5px;" href="#chapter8" onclick="loadSection('chapter8')">
+        <img class="icon" src="/svg/8.png" alt="">
+          <span class="text nav-text">Ch: 8</span>
+
+        </a>
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#chapter2" onclick="loadSection('chapter2')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-2-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z" />
+              </svg>
+              <span class="text nav-text">Ch: 2</span>
+            </a>
+            <a style="margin-left: 5px;" href="#chapter9" onclick="loadSection('chapter9')">
+              <img class="icon" src="/svg/9.png" alt="">
+              <span class="text nav-text">Ch: 9</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter3" onclick="loadSection('chapter3')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-3-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z" />
+              </svg>
+              <span class="text nav-text">Ch: 3</span>
+            </a>
+            <a style="margin-left: 5px;" href="#chapter10" onclick="loadSection('chapter10')">
+              <img class="icon" class="icon" src="/svg/10.png" alt="">
+              <span class="text nav-text">Ch: 10</span>
+
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter4" onclick="loadSection('chapter4')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-4-square-fill" viewBox="0 0 16 16">
+                <path d="M6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265Z" />
+              </svg>
+              <span class="text nav-text">ch: 4</span>
+            </a>
+            <a style="margin-left: 5px;" href="#chapter11" onclick="loadSection('chapter11')">
+            <img class="icon" src="/svg/11.png" alt="">
+              <span class="text nav-text">Ch: 11</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter5" onclick="loadSection('chapter5')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-5-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.994 12.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z" />
+              </svg>
+              <span class="text nav-text">Ch: 5</span>
+            </a>
+            <a style="margin-left: 5px;" href="#chapter12" onclick="loadSection('chapter12')">
+            <img class="icon" src="/svg/12.png" alt="">
+              <span class="text nav-text">Ch: 12</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter6" onclick="loadSection('chapter6')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-6-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8.111 7.863c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z" />
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6.21 3.855c1.612 0 2.515.99 2.573 1.899H9.494c-.1-.358-.51-.815-1.312-.815-1.078 0-1.817 1.09-1.805 3.036h.082c.229-.545.855-1.155 1.98-1.155 1.254 0 2.508.88 2.508 2.555 0 1.77-1.218 2.783-2.847 2.783-.932 0-1.84-.328-2.409-1.254-.369-.603-.597-1.459-.597-2.642 0-3.012 1.248-4.407 3.117-4.407Z" />
+              </svg>
+              <span class="text nav-text">Ch: 6</span>
+            </a>
+            <a style="margin-left: 5px;" href="#chapter13" onclick="loadSection('chapter13')">
+              <img class="icon" src="/svg/13.png" alt="">
+              <span class="text nav-text">Ch: 13</span>
+
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter7" onclick="loadSection('chapter7')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-7-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm3.37 5.11V4.001h5.308V5.15L7.42 12H6.025l3.317-6.82v-.07H5.369Z" />
+              </svg>
+              <span class="text nav-text">Ch: 7</span>
+            </a>
+            <a style="margin-left: 5px;" href="#chapter14" onclick="loadSection('chapter14')">
+              <img class="icon" src="/svg/14.png" alt="">
+              <span class="text nav-text">Ch: 14</span>
+
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="">
+          <a href="#">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+  </nav>
+<div class="content-study">
+  <section class="home" style="display: flex !important; overflow: hidden;">
+    <div class="text">
+      <img src="/img/Let's learn!.png" style="width: 100%; height: 100vh;" alt="">
+    </div>
+  </section>
+
+
+
+  <section id="chapter1" class="gt">
+    <div class="text item">
+      <img src="/img/chapter1.png" alt="" srcset="">
+    </div>
+  </section>
+
+  <section id="chapter2" class="gt">
+    <div class="text item">
+      <img src="/img/chapter2.png" alt="" srcset="">
+    </div>
+  </section>
+
+  <section id="chapter3" class="gt">
+    <div class="text item">
+      <img src="/img/chapter3.png" alt="" srcset="">
+    </div>
+  </section>
+
+  <section id="chapter4" class="gt">
+    <div class="text item">
+      <img src="/img/ch4.png" alt="" srcset="">
+    </div>
+
+  </section>
+  <section id="chapter5" class="gt">
+    <div class="text item">
+      <img src="/img/chapter5.png" alt="">
+    </div>
+  </section>
+
+  <section id="chapter6" class="gt">
+    <div class="text item">
+      <img src="/img/chapter6.png" alt="">
+    </div>
+  </section>
+
+  <section id="chapter7" class="gt">
+    <div class="text item">
+      <img src="/img/chapter7.png" alt="">
+    </div>
+  </section>
+
+  <section id="chapter8" class="gt">
+    <div class="text item">
+      <img src="/img/chapter8.png" alt="">
+    </div>
+  </section>
+
+  <section id="chapter9" class="gt">
+    <div class="text item">
+      <img src="/img/chapter9.png" alt="">
+    </div>
+  </section>
+
+  <section id="chapter10" class="gt">
+    <div class="text item">
+      <iframe src="/pdf/chapter10.pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+
+  <section id="chapter11" class="gt">
+    <div class="text item">
+      <iframe src="/pdf/chapter11.pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  
+  <section id="chapter12" class="gt">
+    <div class="text item">
+      <iframe src="/pdf/chapter12.pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  
+  <section id="chapter13" class="gt">
+    <div class="text item">
+      <iframe src="/pdf/chapter13.pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  
+  <section id="chapter14" class="gt">
+    <div class="text item">
+      <iframe src="/pdf/chapter14.pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  <div class="img"><img src="img/flower-4865379_1920.png" alt=""></div>  
+  
+</div>
+</div>
+
+  <!-- partial -->
+  <script src="script (2).js"></script>
+
+  
+<script>
+  // Function to load sections and hide the navigation bar
+  function loadSection(sectionId) {
+      // Hide the navigation bar
+
+      // Get all sections
+      const sections = document.querySelectorAll('section');
+      
+      // Hide all sections
+      sections.forEach(function(section) {
+          section.style.display = 'none';
+      });
+      
+      // Show the selected section
+      const selectedSection = document.getElementById(sectionId);
+      selectedSection.style.display = 'block';
+
+      showSection('chapter1');
+  }
+  
+</script>
+
+</body>
+
+</html>
