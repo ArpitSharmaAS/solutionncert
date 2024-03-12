@@ -324,7 +324,7 @@ body.dark .home .text {
   left: 200px;
 }
 
-
+//size not working in phone at 480 to 680 px
 @media (max-width: 480px){
   .content-study{
     display: none;
