@@ -323,13 +323,17 @@ body.dark .home .text {
   position: relative;
   left: 200px;
 }
+.maincontainar{
+  display: none;
+}
 
 /* size not working in phone at 480 to 680 px */
-@media (max-width: 680px){
+/* @media (max-width: 680px){
+  
   .maincontainar{
     display: none !important;
   }
   .sidebar{
     width: 100%;
   }
-}
+} */
