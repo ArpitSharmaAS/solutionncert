@@ -325,7 +325,7 @@ body.dark .home .text {
 }
 
 /* size not working in phone at 480 to 680 px */
-/* @media (max-width: 680px){
+@media (max-width: 680px){
   
   .maincontainar{
     display: none !important;
@@ -333,4 +333,4 @@ body.dark .home .text {
   .sidebar{
     width: 100%;
   }
-} */
+}
