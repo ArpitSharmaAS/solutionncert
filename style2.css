@@ -324,4 +324,12 @@ body.dark .home .text {
   left: 200px;
 }
 
-
+@media (max-width: 480px){
+  .content-study{
+    display: none;
+  }
+  .sidebar{
+    background: rgba(13, 54, 190, 0.137);
+    width: 475px;
+  }
+}
