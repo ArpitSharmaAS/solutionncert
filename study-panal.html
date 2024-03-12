@@ -45,7 +45,7 @@
 
     <div class="menu-bar">
       <div class="menu">
-       <a href="#chapter1" onclick="loadSection('chapter1')">
+       <a id="one" href="#chapter1" onclick="loadSection('chapter1')">
         <li class="search-box">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi icon bi-1-square-fill" viewBox="0 0 16 16">
@@ -53,8 +53,8 @@
               d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
           </svg>
           <span class="text nav-text">Ch: 1</span>
-        </a>
-        <a style="margin-left: 5px;" href="#chapter8" onclick="loadSection('chapter8')">
+        </a> 
+        <a style="margin-left: 5px;" id="ch8" href="#chapter8" onclick="loadSection('chapter8')">
         <img class="icon" src="8.png" alt="">
           <span class="text nav-text">Ch: 8</span>
 
@@ -63,7 +63,7 @@
 
         <ul class="menu-links">
           <li class="nav-link">
-            <a href="#chapter2" onclick="loadSection('chapter2')">
+            <a href="#chapter2" id="ch2" onclick="loadSection('chapter2')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi icon bi-2-square-fill" viewBox="0 0 16 16">
                 <path
@@ -71,14 +71,14 @@
               </svg>
               <span class="text nav-text">Ch: 2</span>
             </a>
-            <a style="margin-left: 5px;" href="#chapter9" onclick="loadSection('chapter9')">
+            <a style="margin-left: 5px;" id="ch9" href="#chapter9" onclick="loadSection('chapter9')">
               <img class="icon" src="9.png" alt="">
               <span class="text nav-text">Ch: 9</span>
             </a>
           </li>
 
           <li class="nav-link">
-            <a href="#chapter3" onclick="loadSection('chapter3')">
+            <a href="#chapter3" id="ch3" onclick="loadSection('chapter3')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi icon bi-3-square-fill" viewBox="0 0 16 16">
                 <path
@@ -86,7 +86,7 @@
               </svg>
               <span class="text nav-text">Ch: 3</span>
             </a>
-            <a style="margin-left: 5px;" href="#chapter10" onclick="loadSection('chapter10')">
+            <a style="margin-left: 5px;" id="ch10" href="#chapter10" onclick="loadSection('chapter10')">
               <img class="icon" class="icon" src="10.png" alt="">
               <span class="text nav-text">Ch: 10</span>
 
@@ -94,7 +94,7 @@
           </li>
 
           <li class="nav-link">
-            <a href="#chapter4" onclick="loadSection('chapter4')">
+            <a href="#chapter4" id="ch4" onclick="loadSection('chapter4')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi icon bi-4-square-fill" viewBox="0 0 16 16">
                 <path d="M6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
@@ -103,14 +103,14 @@
               </svg>
               <span class="text nav-text">ch: 4</span>
             </a>
-            <a style="margin-left: 5px;" href="#chapter11" onclick="loadSection('chapter11')">
+            <a style="margin-left: 5px;" id="ch11" href="#chapter11" onclick="loadSection('chapter11')">
             <img class="icon" src="11.png" alt="">
               <span class="text nav-text">Ch: 11</span>
             </a>
           </li>
 
           <li class="nav-link">
-            <a href="#chapter5" onclick="loadSection('chapter5')">
+            <a href="#chapter5" id="ch5" onclick="loadSection('chapter5')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi icon bi-5-square-fill" viewBox="0 0 16 16">
                 <path
@@ -118,14 +118,14 @@
               </svg>
               <span class="text nav-text">Ch: 5</span>
             </a>
-            <a style="margin-left: 5px;" href="#chapter12" onclick="loadSection('chapter12')">
+            <a style="margin-left: 5px;" id="ch12" href="#chapter12" onclick="loadSection('chapter12')">
             <img class="icon" src="12.png" alt="">
               <span class="text nav-text">Ch: 12</span>
             </a>
           </li>
 
           <li class="nav-link">
-            <a href="#chapter6" onclick="loadSection('chapter6')">
+            <a href="#chapter6" id="ch6" onclick="loadSection('chapter6')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi icon bi-6-square-fill" viewBox="0 0 16 16">
                 <path
@@ -135,7 +135,7 @@
               </svg>
               <span class="text nav-text">Ch: 6</span>
             </a>
-            <a style="margin-left: 5px;" href="#chapter13" onclick="loadSection('chapter13')">
+            <a style="margin-left: 5px;" id="ch13" href="#chapter13" onclick="loadSection('chapter13')">
               <img class="icon" src="13.png" alt="">
               <span class="text nav-text">Ch: 13</span>
 
@@ -143,7 +143,7 @@
           </li>
 
           <li class="nav-link">
-            <a href="#chapter7" onclick="loadSection('chapter7')">
+            <a href="#chapter7" id="ch7" onclick="loadSection('chapter7')">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi icon bi-7-square-fill" viewBox="0 0 16 16">
                 <path
@@ -151,7 +151,7 @@
               </svg>
               <span class="text nav-text">Ch: 7</span>
             </a>
-            <a style="margin-left: 5px;" href="#chapter14" onclick="loadSection('chapter14')">
+            <a style="margin-left: 5px;" id="ch14" href="#chapter14" onclick="loadSection('chapter14')">
               <img class="icon" src="14.png" alt="">
               <span class="text nav-text">Ch: 14</span>
 

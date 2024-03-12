@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Width Check</title>
+  <script>
+    function checkScreenWidth() {
+      // Get the screen width
+      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      // Check if the screen width is less than or equal to 455 pixels
+      if (screenWidth <= 455) {
+        // Display a pop-up or perform any action you want
+        alert("Screen width is less than or equal to 455 pixels!");
+      }
+    }
+
+    // Attach the function to the window resize event
+    window.addEventListener('resize', checkScreenWidth);
+
+    // Initial check when the page loads
+    window.onload = checkScreenWidth;
+  </script>
+</head>
+<body>
+  <!-- Your HTML content goes here -->
+</body>
+</html>
