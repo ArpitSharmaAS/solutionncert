@@ -325,11 +325,11 @@ body.dark .home .text {
 }
 
 /* size not working in phone at 480 to 680 px */
-@media (max-width: 480px){
-  .content-study{
+@media (max-width: 680px){
+  .maincontainar{
     display: none;
   }
   .sidebar{
-    width: 475px;
+    width: 100%;
   }
 }
