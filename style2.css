@@ -324,6 +324,7 @@ body.dark .home .text {
   left: 200px;
 }
 
+
 @media (max-width: 480px){
   .content-study{
     display: none;
