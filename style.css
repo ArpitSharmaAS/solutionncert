@@ -302,7 +302,7 @@ li a:hover{
       position: relative;
       top: -350px;
       left: -21px;
-      width: 400px;
+      width: 380px;
       height: auto;
     }
     svg{
@@ -319,7 +319,7 @@ li a:hover{
       left: 0px;
       background: #5546462c !important;
       height: 250px;
-      width: 400px;
+      width: 380px;
       padding: 10px;
       opacity: 1;
     } 
