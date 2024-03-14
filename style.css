@@ -231,9 +231,7 @@ li a:hover{
   }
 
   @media (max-width: 680px){
-    body{
-      width: auto;
-    }
+    
      .overview .right{
       display: none;
     }
@@ -242,7 +240,9 @@ li a:hover{
     }
   }
   @media (max-width: 480px){
-       
+    body{
+      width: auto;
+    } 
     .hidenav li{
       display: block;
     }
