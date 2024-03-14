@@ -231,6 +231,9 @@ li a:hover{
   }
 
   @media (max-width: 680px){
+    body{
+      width: auto;
+    }
      .overview .right{
       display: none;
     }
