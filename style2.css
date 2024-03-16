@@ -318,6 +318,15 @@ body.dark .home .text {
   top: 0px;
   left: 250px;
  }
+ #chapter3 img{
+  position: relative;
+  left: 200px;
+ }
+ #chapter5 img{
+  width: 746px;
+  position: relative;
+  left: 200px;
+ }
  #chapter2 img{
   position: relative;
   left: 200px;
