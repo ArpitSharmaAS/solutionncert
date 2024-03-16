@@ -318,6 +318,10 @@ body.dark .home .text {
   top: 0px;
   left: 250px;
  }
+ #chapter2 img{
+  position: relative;
+  left: 200px;
+ }
 #chapter4 img{
   filter: invert(45deg);
   position: relative;
