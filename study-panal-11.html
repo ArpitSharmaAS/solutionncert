@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale.0">
+  <title>Class 10 || Sub: Math</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="logo update.png">
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet'
+    href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'>
+<script>
+
+  function checkScreenWidth() {
+    // Get the screen width
+    let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    let one = document.getElementById('one');
+    let ch2 = document.getElementById('ch2');
+    let ch3 = document.getElementById('ch3');
+    let ch4 = document.getElementById('ch4');
+    let ch5 = document.getElementById('ch5');
+    let ch6 = document.getElementById('ch6');
+    let ch7 = document.getElementById('ch7');
+    let ch8 = document.getElementById('ch8');
+    let ch9 = document.getElementById('ch9');
+    let ch10 = document.getElementById('ch10');
+    let ch11 = document.getElementById('ch11');
+    let ch12 = document.getElementById('ch12');
+    let ch13 = document.getElementById('ch13');
+    let ch14 = document.getElementById('ch14');
+    // Check if the screen width is less than or equal to 455 pixels
+    if (screenWidth <= 680) {
+      one.href = '12.png'
+      ch2.href = 'chapter2.pdf'
+      ch3.href = 'chapter3.png'
+      ch4.href = 'ch4.png'
+      ch5.href = 'chapter5.png'
+      ch6.href = 'chapter6.png'
+      ch7.href = 'chapter7.png'
+      ch8.href = 'chapter8.png'
+      ch9.href = 'chapter9.png'
+      ch10.href = 'chapter10.png'
+      ch11.href = 'chapter11.png'
+      ch12.href = 'chapter12.png'
+      ch13.href = 'chapter13.png'
+      ch14.href = 'chapter14.png'
+      console.log("find")
+    }
+  }
+  
+   // Attach the function to the window resize event
+   window.addEventListener('resize', checkScreenWidth);
+  
+   // Initial check when the page loads
+   window.onload = checkScreenWidth;</script>
+<style >
+  section{
+    display: none;
+  }
+  .gt{
+    margin-left: 340px;
+  }
+</style>
+</head>
+
+<body>
+<div class="everything">
+  <!-- partial:index.partial.html -->
+  <nav class="sidebar">
+    <header>
+      <div class="image-text">
+        <span class="image close">
+          <a href="index.html"> <img src="logo update.png" alt=""/>
+            </a>
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">class: 10</span>
+          <span class="profession">UP Board</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+       <a id="one" href="#chapter1" onclick="loadSection('chapter1')">
+        <li class="search-box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi icon bi-1-square-fill" viewBox="0 0 16 16">
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z" />
+          </svg>
+          <span class="text nav-text">Ch: 1</span>
+        </a> 
+        <a style="margin-left: 5px;" id="ch8" href="#chapter8" onclick="loadSection('chapter8')">
+        <img class="icon" src="8.png" alt="">
+          <span class="text nav-text">Ch: 8</span>
+
+        </a>
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#chapter2" id="ch2" onclick="loadSection('chapter2')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-2-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z" />
+              </svg>
+              <span class="text nav-text">Ch: 2</span>
+            </a>
+            <a style="margin-left: 5px;" id="ch9" href="#chapter9" onclick="loadSection('chapter9')">
+              <img class="icon" src="9.png" alt="">
+              <span class="text nav-text">Ch: 9</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter3" id="ch3" onclick="loadSection('chapter3')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-3-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z" />
+              </svg>
+              <span class="text nav-text">Ch: 3</span>
+            </a>
+            <a style="margin-left: 5px;" id="ch10" href="#chapter10" onclick="loadSection('chapter10')">
+              <img class="icon" class="icon" src="10.png" alt="">
+              <span class="text nav-text">Ch: 10</span>
+
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter4" id="ch4" onclick="loadSection('chapter4')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-4-square-fill" viewBox="0 0 16 16">
+                <path d="M6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218Z" />
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.519 5.057c.22-.352.439-.703.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265Z" />
+              </svg>
+              <span class="text nav-text">ch: 4</span>
+            </a>
+            <a style="margin-left: 5px;" id="ch11" href="#chapter11" onclick="loadSection('chapter11')">
+            <img class="icon" src="11.png" alt="">
+              <span class="text nav-text">Ch: 11</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter5" id="ch5" onclick="loadSection('chapter5')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-5-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm5.994 12.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z" />
+              </svg>
+              <span class="text nav-text">Ch: 5</span>
+            </a>
+            <a style="margin-left: 5px;" id="ch12" href="#chapter12" onclick="loadSection('chapter12')">
+            <img class="icon" src="12.png" alt="">
+              <span class="text nav-text">Ch: 12</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter6" id="ch6" onclick="loadSection('chapter6')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-6-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8.111 7.863c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z" />
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm6.21 3.855c1.612 0 2.515.99 2.573 1.899H9.494c-.1-.358-.51-.815-1.312-.815-1.078 0-1.817 1.09-1.805 3.036h.082c.229-.545.855-1.155 1.98-1.155 1.254 0 2.508.88 2.508 2.555 0 1.77-1.218 2.783-2.847 2.783-.932 0-1.84-.328-2.409-1.254-.369-.603-.597-1.459-.597-2.642 0-3.012 1.248-4.407 3.117-4.407Z" />
+              </svg>
+              <span class="text nav-text">Ch: 6</span>
+            </a>
+            <a style="margin-left: 5px;" id="ch13" href="#chapter13" onclick="loadSection('chapter13')">
+              <img class="icon" src="13.png" alt="">
+              <span class="text nav-text">Ch: 13</span>
+
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#chapter7" id="ch7" onclick="loadSection('chapter7')">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi icon bi-7-square-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm3.37 5.11V4.001h5.308V5.15L7.42 12H6.025l3.317-6.82v-.07H5.369Z" />
+              </svg>
+              <span class="text nav-text">Ch: 7</span>
+            </a>
+            <a style="margin-left: 5px;" id="ch14" href="#chapter14" onclick="loadSection('chapter14')">
+              <img class="icon" src="14.png" alt="">
+              <span class="text nav-text">Ch: 14</span>
+
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="">
+          <a href="index.html">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Exit</span>
+          </a>
+        </li>
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Dark mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+      </div>
+    </div>
+  </nav>
+<div class="maincontainar">
+  <section class="home" style="display: flex !important; overflow: hidden;">
+    <div class="text">
+      <img src="Let's learn!.png" style="width: 100%; height: 100vh;" alt="">
+    </div>
+  </section>
+
+
+
+  <section id="chapter1" class="gt">
+    <div class="text item">
+        <iframe src="11(1).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+
+  <section id="chapter2" class="gt">
+    <div class="text item">
+        <iframe src="11(2).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+
+  <section id="chapter3" class="gt">
+    <div class="text item">
+        <iframe src="11(3).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+
+  <section id="chapter4" class="gt">
+    <div class="text item">
+        <iframe src="11(4).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+  <section id="chapter5" class="gt">
+    <div class="text item">
+        <iframe src="11(5).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+
+  <section id="chapter6" class="gt">
+    <div class="text item">
+        <iframe src="11(6).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+
+  <section id="chapter7" class="gt">
+    <div class="text item">
+        <iframe src="11(7).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+
+  <section id="chapter8" class="gt">
+    <div class="text item">
+        <div class="text item">
+            <iframe src="11(8).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+          </div>
+  </section>
+
+  <section id="chapter9" class="gt">
+    <div class="text item">
+        <iframe src="11(9).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+      </div>
+  </section>
+
+  <section id="chapter10" class="gt">
+    <div class="text item">
+      <iframe src="11(10).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+
+  <section id="chapter11" class="gt">
+    <div class="text item">
+      <iframe src="11(11).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  
+  <section id="chapter12" class="gt">
+    <div class="text item">
+      <iframe src="11(12).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  
+  <section id="chapter13" class="gt">
+    <div class="text item">
+      <iframe src="11(13).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  
+  <section id="chapter14" class="gt">
+    <div class="text item">
+      <iframe src="11(14).pdf" height="1000cm" width="80%" frameborder="6"></iframe>
+    </div>
+  </section>
+  <div class="img"><img src="flower-4865379_1920.png" alt=""></div>  
+  
+</div>
+</div>
+
+  <!-- partial -->
+  <script src="script (2).js"></script>
+
+  
+<script>
+  // Function to load sections and hide the navigation bar
+  function loadSection(sectionId) {
+      // Hide the navigation bar
+
+      // Get all sections
+      const sections = document.querySelectorAll('section');
+      
+      // Hide all sections
+      sections.forEach(function(section) {
+          section.style.display = 'none';
+      });
+      
+      // Show the selected section
+      const selectedSection = document.getElementById(sectionId);
+      selectedSection.style.display = 'block';
+
+      showSection('chapter1');
+  }
+  
+</script>
+
+</body>
+
+</html>
