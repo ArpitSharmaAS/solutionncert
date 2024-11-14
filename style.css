@@ -73,13 +73,13 @@ i:hover{
   width: 1cm;
   height: 5cm;  
   display: flex; 
-  margin-top: -50px;
-  margin-left: -45px;
+  margin-top: -15px;
+  margin-left: 5px;
 
 }
 .logo img{   
  width: auto;
- max-height: 90%;
+ max-height: 50%;
 }
 
 li a {
@@ -132,11 +132,11 @@ li a:hover{
 }
 
 .layout {
-    position: absolute;
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     top: 100%;
-    gap: 40px;
+    gap: 10px;
     padding: 35px;
   }
  
@@ -295,16 +295,21 @@ li a:hover{
     }
     
   
+
     .layout {
+      align-items: center;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
+      padding: 25px;
     }
 
 
     .div{
+
       position: relative;
-      top: -350px;
-      left: -21px;
+      /* top: -350px;
+      left: -21px; */
+      margin-top: 20px;
       width: 380px;
       height: auto;
     }
@@ -316,9 +321,9 @@ li a:hover{
       font-size: 20px;
     }
     .portfolio-details {
-      border-radius: 5px;
+      border-radius: 10px;
       position: relative;
-      top: -3px;
+      top: -2.5px;
       left: 0px;
       background: #5546462c !important;
       height: 250px;
